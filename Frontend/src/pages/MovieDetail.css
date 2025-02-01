@@ -1,0 +1,71 @@
+/* Movie Detail Container */
+.movie-detail-container {
+    display: flex;
+    flex-direction: row; /* Align poster and info side by side */
+    align-items: flex-start; /* Align items to the top */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 20px; /* Add space between poster and info */
+  }
+  
+  /* Loading State */
+  .loading {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 50px;
+  }
+  
+  /* Movie Poster */
+  .movie-poster {
+    flex: 1; /* Take up 1 part of the flex container */
+    max-width: 300px; /* Limit poster width */
+  }
+  
+  .movie-poster img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Movie Info */
+  .movie-info {
+    flex: 2; /* Take up 2 parts of the flex container */
+    text-align: left; /* Align text to the left */
+  }
+  
+  .movie-info h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .movie-plot {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  /* Movie Meta Information */
+  .movie-meta {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .movie-meta p {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .movie-meta strong {
+    color: #007bff;
+  }
