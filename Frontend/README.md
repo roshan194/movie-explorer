@@ -29,16 +29,19 @@ The frontend of Movie Explorer is built using **React.js**. It allows users to s
 1. **Navigate to the Frontend Folder**:
    ```bash
    cd frontend
+
 2. Install Dependencies:
 
 bash
 Copy
 npm install
+
 3. Start the Development Server:
 
 bash
 Copy
 npm start
+
 4. Open the App:
 
 The app will open in your browser at http://localhost:3000.
