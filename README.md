@@ -30,12 +30,12 @@ Movie Explorer is a full-stack web application that allows users to search for m
 
 Navigate to the backend folder and follow the instructions in the Backend README.
 
-Set up the Frontend:
+3. Set up the Frontend:
 
-3. Navigate to the frontend folder and follow the instructions in the Frontend README.
+Navigate to the frontend folder and follow the instructions in the Frontend README.
 
-Run the App:
+4. Run the App:
 
-4. Start the backend server and the frontend app.
+Start the backend server and the frontend app.
 
 Open http://localhost:3000 in your browser to use the app.   
