@@ -1,45 +1,62 @@
 .home {
-    padding: 20px;
-    text-align: center; /* Center-align all content */
-  }
-  
-  .home h1 {
-    margin-bottom: 20px; /* Add space below the heading */
-    font-size: 2.5rem; /* Increase font size for the main heading */
-    color: #333; /* Darker color for better readability */
-  }
-  
-  .search-bar {
-    margin-bottom: 20px; /* Add space below the search bar */
-  }
-  
-  .search-bar input {
-    padding: 10px;
-    width: 300px;
-    font-size: 16px;
-    border: 1px solid #ccc; /* Add a border to the input */
-    border-radius: 5px; /* Rounded corners */
-  }
-  
-  .search-bar button {
-    padding: 10px 20px;
-    font-size: 16px;
-    margin-left: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .search-bar button:hover {
-    background-color: #0056b3; /* Darker shade on hover */
-  }
-  
-  .movie-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px; /* Add space above the movie list */
-  }
+  padding: 20px;
+  text-align: center;
+}
+
+.home h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Space between search bar and button */
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  padding: 10px;
+  width: 300px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #0056b3;
+}
+
+.view-favorites-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.view-favorites-button:hover {
+  background-color: #218838;
+}
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}

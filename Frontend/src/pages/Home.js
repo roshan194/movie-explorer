@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 import SearchBar from "../components/SearchBar";
 import MovieCard from "../components/MovieCard";
 import "./Home.css";
@@ -7,6 +8,7 @@ import "./Home.css";
 function Home() {
   const [movies, setMovies] = useState([]);
   const [loading, setLoading] = useState(true);
+  const navigate = useNavigate();
 
   // Fetch random movies on component mount
   useEffect(() => {
@@ -43,11 +45,21 @@ function Home() {
     }
   };
 
+  // Redirect to Favorites page
+  const goToFavorites = () => {
+    navigate("/favorites");
+  };
+
   return (
     <div className="home">
       <h1>Movie Explorer</h1>
       <p>Search for a movie...</p>
-      <SearchBar onSearch={handleSearch} />
+      <div className="search-container">
+        <SearchBar onSearch={handleSearch} />
+        <button onClick={goToFavorites} className="view-favorites-button">
+          View Favorites
+        </button>
+      </div>
       {loading ? (
         <p>Loading...</p>
       ) : (
